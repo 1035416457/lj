@@ -15,10 +15,11 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   
   <build>
+   <finalName>lj</finalName>
   <plugins>
-    
     <plugin>
                 <groupId>org.codehaus.cargo</groupId>
                 <artifactId>cargo-maven2-plugin</artifactId>
@@ -41,9 +42,11 @@
                     </configuration>
                 </configuration>
             </plugin>
-              </plugins>
-             <finalName>lj</finalName>
+           </plugins>
+            
   </build>
   
 </project>
+
+ 
 

@@ -15,7 +15,35 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <build>
-    <finalName>lj</finalName>
+  <plugins>
+    
+    <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.4.9</version>
+                <configuration>
+                    <container>
+                        <!-- 容器版本名称-->
+                        <containerId>Tomcat 9.0</containerId>
+                        <type>remote</type>
+                    </container>
+                    <configuration>
+                        <type>runtime</type>
+                        <properties>
+                            <!-- tomcat管理界面-->
+                            <cargo.remote.uri>http://127.0.0.1:8888/lj</cargo.remote.uri>
+                            <!-- tomcat管理界面用户名和密码-->
+                            <cargo.remote.username>tomcat</cargo.remote.username>
+                            <cargo.remote.password>123456</cargo.remote.password>
+                        </properties>
+                    </configuration>
+                </configuration>
+            </plugin>
+              </plugins>
+             <finalName>lj</finalName>
   </build>
+  
 </project>
+

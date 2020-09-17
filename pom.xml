@@ -26,7 +26,7 @@
                 <configuration>
                     <container>
                         <!-- 容器版本名称-->
-                        <containerId>Tomcat 9.0</containerId>
+                        <containerId>Tomcat 9.0.37</containerId>
                         <type>remote</type>
                     </container>
                     <configuration>

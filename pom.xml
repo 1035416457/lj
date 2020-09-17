@@ -15,9 +15,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-  
   <build>
+  <defaultGoal>install</defaultGoal>
    <finalName>lj</finalName>
   <plugins>
     <plugin>
